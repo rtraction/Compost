@@ -1,0 +1,90 @@
+ul.geogoer_vchecks{
+	list-style-type: none;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+ul.geogoer_vchecks li.first{
+	background-image: url(../images/top_button_bg.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-color: #d5d5d5;
+}
+ul.geogoer_vchecks li.first_hover{
+	background-image: url(../images/top_button_bg_hover.gif);
+}
+ul.geogoer_vchecks li.first span{
+	background-image: url(../images/top_button_left.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding-top: 6px;
+	height: 20px;
+}
+ul.geogoer_vchecks li.first_hover span{
+	background-image: url(../images/top_button_left_hover.gif);
+}
+ul.geogoer_vchecks li.last{
+	background-image: url(../images/bottom_button_bg.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	border-width: 0px 0px 0px 0px;
+}
+ul.geogoer_vchecks li.last_hover{
+	background-image: url(../images/bottom_button_bg_hover.gif);
+}
+ul.geogoer_vchecks li.last span{
+	background-image: url(../images/bottom_button_left.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+ul.geogoer_vchecks li.last_hover span{
+	background-image: url(../images/bottom_button_left_hover.gif);
+}
+ul.geogoer_vchecks li{
+	position: relative;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-bottom-color: #d5d5d5;
+	background-image: url(../images/button_bg.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+ul.geogoer_vchecks li.hover{
+	background-image: url(../images/button_bg_hover.gif);
+}
+ul.geogoer_vchecks li span{
+	color: black;
+	font-weight: bold;
+	font-size: 11px;
+	cursor: pointer;
+	display: block;
+	height: 21px;
+	padding-top: 5px;
+	padding-left: 15px;
+	background-image: url(../images/button_left.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+ul.geogoer_vchecks li.hover span{
+	background-image: url(../images/button_left_hover.gif);
+}
+ul.geogoer_vchecks li.checked div.check_div{
+	background-image: url(../images/tick.png);
+	background-repeat: no-repeat;
+}
+ul.geogoer_vchecks li.unchecked div.check_div{
+	background-image: url(../images/cross.png);
+	background-repeat: no-repeat;
+}
+ul.geogoer_vchecks li.unchecked span{
+	color: #999999;
+}
+ul.geogoer_vchecks li div.check_div{
+	display: block;
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}

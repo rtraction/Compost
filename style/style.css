@@ -1,0 +1,696 @@
+/*
+ * This file is part of Compost.
+ *
+ * Compost is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Compost is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Compost.  If not, see <http://www.gnu.org/licenses/>.
+ */
+ 
+/* Webkit-specific styles */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+}
+
+/*
+ * General Styles
+ */
+body {
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+	font-size: 15px;
+	color: #3d3d3d;
+	background: #747474 url(../images/page_bg.png) repeat-x top right;
+}
+
+.hidden { display: none; }
+.red { color: #990000 !important; }
+.green { color: #009900; }
+.grey { color: grey; }
+.small { font-size: 10px; }
+.small img { max-height: 15px; }
+.floatright { float: right; }
+.floatleft { float: left; }
+.clear { clear: both; }
+.loading {
+	background: url(../images/preloader.gif) no-repeat center center;
+}
+
+a { 
+	color: #0AAFF4;
+	font-weight: bold;
+}
+
+a:hover { 
+	color: #06709D;
+}
+
+a img { border: none; }
+
+h1 { 
+	margin: 0; 
+	font-size: 36px;
+	color: white;
+}
+
+h2, input.compname { 
+	margin: 0;
+	width: 100%;
+	font-size: 25px;
+	padding: 1px;
+}
+
+h3 { margin: 15px 0; }
+
+h4 { }
+
+hr {
+	border: none;
+	border-top: 1px solid #c2c2c2;
+	margin-top: 30px;
+}
+
+/*
+ * Header
+ */
+#header {
+	height: 143px;
+	width: 804px;
+	margin: 0 auto;
+	padding: 26px 0 0 0;
+	background-image: url(../images/header_bg.png);
+}
+#header h1 {
+	padding: 30px 0 30px 200px;
+	font-family: georgia;
+	font-weight: normal;
+	height: 44px;
+	font-size: 30px;
+	width: 579px;
+	margin: 0 auto;
+	background: url(../images/logo.png) no-repeat left center;
+	text-align: right;
+}
+#menu {
+	list-style: none;
+	width: 784px;
+	margin: 0 auto;
+	height: 39px;
+	padding: 0 10px;
+}
+#menu li { 
+	float: left; 
+	color: white;
+	padding: 0px 15px 5px 15px;
+	margin: 10px 0 5px 0;
+	font-size: 12px;
+	border-right: 1px solid #fff;
+}
+#menu li.noborder {
+	border-right: none;
+}
+#menu li.right {
+	float: right;
+}
+#menu li a {
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+}
+#menu li.current a, #menu li a:hover {
+	color: #0AAFF4;
+}
+
+#wrap {
+	background: #3192cf url(../images/main_bg.png) repeat-x;
+	padding: 0;
+	margin: 0;
+}
+
+#page {
+	margin: 0 auto;
+	padding: 40px 60px;
+	min-height: 650px;
+	width: 730px;
+	background: url(../images/body_bg.png) repeat-y center;
+}
+#description, input.compdescription {
+	padding: 1px;
+	margin: 15px 0;
+	width: 490px;
+}
+#description {
+	font-style: italic;
+}
+input.compdescription {
+	margin-bottom: 29px;
+}
+
+/*
+ * Submenu
+ */
+#rightlink {
+	float: right;
+	display: block;
+	margin-top: 5px;
+	list-style: none;
+	width: 178px;
+	padding: 0 0 10px 20px;
+	margin-left: 0;
+	border-left: 1px solid #BFD0D8;
+}
+#rightlink li { 
+	margin: 0; padding: 10px 0 0 0; 
+	font-size: 12px;
+}
+
+/*
+ * Forms
+ */
+FORM DL {
+	margin-top: 20px;
+}
+FORM DT {
+   clear:both;
+   width:100px;
+   float:left;
+   text-align:left;
+	 font-weight: bold;
+}
+
+FORM DD {
+   float:left;
+   width:250px;
+   margin:0 0 0.5em 0.25em;
+}
+FORM DD input[type=text], input[type=password] {
+	width: 211px;
+}
+input[type=submit], input[type=reset], input[type=button].primary {
+	border: none;
+	background: url(../images/button.jpg) no-repeat;
+	height: 28px;
+	width: 93px;
+	font-weight: bold;
+	color: #3d3d3d;
+}
+input[type=submit]:hover, input[type=reset]:hover , input[type=button].primary:hover{
+	background: url(../images/button_hover.jpg) no-repeat;
+}
+input[type=button], input[type=reset] {
+	border: none;
+	background: url(../images/button2.jpg) no-repeat;
+	height: 28px;
+	width: 93px;
+	font-weight: bold;
+	color: #3d3d3d;
+}
+input[type=button]:hover, input[type=reset]:hover {
+	background: url(../images/button2_hover.jpg) no-repeat;
+}
+input[type=checkbox] {
+	margin-left: 25px;
+	width: 20px;
+}
+#loginbutton {
+	margin-left: 122px;
+}
+.widelabel { 
+	width: 150px; 
+	display: block; 
+	float: left; 
+	margin-top: 5px; 
+	font-weight: bold; 
+}
+.description {
+	display: block;
+	font-size: 12px;
+	color: #777;
+}
+
+.bgrepeat, .pagefloat { cursor: pointer; }
+.bgrepeat img, .pagefloat img { border: 2px solid white; }
+#RevisionBackgroundColour {
+	text-transform: uppercase;
+}
+a#removebackground img {
+	vertical-align: middle;
+	cursor: pointer;
+}
+#RevisionBackgroundImage {
+	height: 25px;
+}
+
+dd, dt {
+	padding: 10px
+}
+
+dl#pageinfo dd {
+	background: #eee;
+}
+dl#bginfo dd {
+	background: #eee;
+}
+	
+
+/*
+ * page preview
+ */
+#pagepreview {
+	position: fixed;
+	top: 300px;
+	margin-left: 410px;
+}
+#pagepreview img {
+	margin: 0 0 -3px 0;
+	padding: 0;
+	border: thin solid #B9B9B9;
+	border-top: none;
+	border-bottom: none;
+}
+#pagepreview #previewname {
+	margin-top: -40px;
+	margin-bottom: 20px;
+	width: 157px;
+	display: block;
+	font-size: 11px;
+	color: white;
+	font-weight: bold;
+	padding-left: 110px;
+	overflow: hidden;
+	height: 20px;
+}
+#pagepreview #previewbrowser {
+	height: 256px;
+	width: 320px;
+	border: thin solid #b9b9b9;
+	overflow-y: scroll;
+}
+#pagepreview #previewpage {
+	background-repeat: no-repeat;
+	height: 100px;
+	border-top: none;
+	margin: 0;
+	padding: 0;
+}
+#bigpreview {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 200%;
+	width: 100%;
+	display: none;
+	background: black;
+}
+#pagebg {
+	position: relative;
+}
+
+/*
+ * Tables
+ */
+ .star-rating-readonly img.thumb { display: block; }
+table tr td { padding: 15px; font-size: 12px; vertical-align: bottom; }
+a.thumb {
+	margin-top: 6px; 
+	display: block; 
+	height: 240px; 
+	width: 200px;
+	overflow: hidden;
+	background: #eee;
+	border: 1px solid #8bc642;
+}
+a.thumb img {
+	margin: 0 auto;
+	display: block; 
+}
+/*
+img.project.thumb {
+	height: auto;
+	width: auto;
+	max-height: 86px;
+	max-width: 86px;
+}
+img.client.thumb {
+	height: auto;
+	width: auto;
+	max-height: 86px;
+	max-width: 86px;
+}
+*/
+/* 
+ * Content
+ */
+#content { float: left; margin: 0; width: 500px; }
+h2 {
+	margin-bottom: 2px;
+}
+h2 img {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+#page p { }
+#page p.buttonrow { margin-top: 10px; }
+
+/*
+ * Discussion
+ */
+.discussionthumb {
+	margin: 0px 0px 20px 0px;
+}
+ul#discussion {
+	list-style: none;
+	margin: 40px 0 0 0;
+	padding: 0 0 0 20px;
+}
+ul#discussion li { 
+	background: url(../images/closed.gif) no-repeat left 2px;
+	padding-left: 20px;
+}
+ul#discussion li.expanded {
+	background: url(../images/open.gif) no-repeat left 2px;
+}
+ul#discussion li ul {
+	border-left: 1px solid #c2c2c2;
+	margin: 0 0 40px 20px;
+	padding-left: 15px;
+}
+ul#discussion li ul li {
+	background-image: none;
+	list-style: none;
+}
+ul#discussion li ul li.reply input[type=submit] {
+	margin: 10px 5px 0 308px;
+}
+ul#discussion li p {
+	font-style: italic;
+	margin: 5px 0 25px 0;
+}
+ul#discussion li p a {
+	font-style: normal;
+}
+
+/*
+ * Composition
+ */
+#composition {
+	position: relative;
+}
+#composition #toolbar {
+	width: 690px;
+	text-align: center;
+	margin: 20px auto 10px auto;
+}
+#composition #toolbar a {
+	font-size: 12px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+#composition #toolbar a img {
+	vertical-align: bottom;
+	padding: 2px;
+	border: 1px solid white;
+}
+#composition #toolbar a img:hover {
+	border: 1px solid #3d3d3d;
+}
+#composition #thecomp {
+	width: 730px;
+	cursor: pointer;
+}
+
+/*
+ * Dashboard Notifications
+ */
+#recentactivity {
+	list-style: none;
+}
+#recentactivity li {
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+#recentactivity li .date {
+	color: #666;
+	display: block;
+	text-transform: capitalize;
+}
+#recentactivity li .event {
+	
+}
+#recentactivity li .event a {
+	font-weight: normal;
+	font-size: 14px;
+	text-decoration: none;
+}
+#recentactivity li .event a:hover {
+	text-decoration: underline;
+}
+
+ 
+/*
+ * Comp View Buttons
+ */
+#fullscreen, #toggle, #newannotation {
+	display: block;
+	float: left;
+	text-indent: -9999px;
+	height: 26px;
+	width: 34px;
+}
+#fullscreen:active, #fullscreen:focus, #toggle:active, #toggle:focus, #newannotation:active, #newannotation:focus {
+	outline: none;
+}
+#fullscreen {
+	background: url(../images/fullscreen_off.gif) no-repeat top left;
+}
+#fullscreen:hover {
+	background: url(../images/fullscreen_on.gif) no-repeat top left;
+}
+#toggle {
+	background: url(../images/toggle_off.gif) no-repeat top left;
+}
+#toggle:hover {
+	background: url(../images/toggle_on.gif) no-repeat top left;
+}
+#newannotation {
+	background: url(../images/new_off.gif) no-repeat top left;
+}
+#newannotation:hover {
+	background: url(../images/new_on.gif) no-repeat top left;
+}
+/*
+ * Annotations
+ */
+.annotation {
+	height: 74px;
+	width: 74px;
+	background: url(../images/annotation.png) no-repeat;
+
+	cursor: pointer;
+	position: absolute;
+}
+.annotation:hover {
+	background: url(../images/annotation_hover.png) no-repeat;
+}
+.annotation .number {
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	padding-top: 16px;
+	margin-bottom: -7px;
+}
+.annotation .new { color: white; display: none; }
+.annotation a { display: none; }
+.annotation p { display: none; }
+.annotation.expanded .number, .annotation.expanded .new { display: none; }
+
+.annotation.client {
+	background: url(../images/annotation_client.png) no-repeat;
+}
+.annotation.client:hover {
+	background: url(../images/annotation_client_hover.png) no-repeat;
+}
+.annotation.expanded, .annotation.expanded:hover {
+	height: 123px;
+	width: 354px;
+	z-index: 100;
+	margin-top: -102px;
+	margin-left: -276px;
+	background: url(../images/annotation_expanded.png) no-repeat top left;
+	padding: 0px 14px 50px 0px;
+}
+.annotation.expanded textarea, .annotation.expanded p {
+
+	display: block;
+	
+}
+
+.annotation.expanded p.edit_ann{
+	overflow:hidden;
+}
+
+.annotation.expanded p.edit_ann textarea{
+	font-family:arial,sans-serif;
+	font-size:15px;
+}
+
+.annotation.expanded p textarea{
+	margin-top: 6px;
+	padding-bottom:0;
+}
+
+.annotation.expanded p {
+	margin-top: 21px;
+	margin-bottom: 0px;
+	padding-left: 12px;
+	width: 342px;
+	color: white;
+	overflow: auto;
+
+}
+
+.annotation.expanded p.edit{
+
+overflow:hidden !important;
+padding-top:14px;
+margin-bottom: -21px;
+	
+}
+
+.annotation.expanded p.view_ann{
+height:78px;
+margin-top:30px;
+padding-left:20px;
+padding-right:10px;
+width:320px;
+margin-bottom:2px;
+}
+
+.annotation.expanded textarea {
+	margin-top: -14px;
+	
+	width: 331px;
+	z-index: 2;
+	border: 1px solid white;
+	background: transparent;
+	color: white;
+	padding: 2px;
+	margin-left: 4px;
+	height: 78px;
+}
+.annotation.client.expanded, .annotation.client.expanded:hover {
+	background: url(../images/annotation_client_expanded.png) no-repeat;
+}
+.annotation.expanded a {
+	padding-top: 11px;
+	display: block;
+	float: left;
+	margin-left: 20px;
+	margin-right: 40px;
+	color: white;
+}
+.annotation.expanded a.ok {
+	margin-right: 0px;
+	float: right;
+	text-decoration: none;
+	cursor: pointer;
+}
+.annotation.expanded a.delete {
+	color: Pink;
+	font-size: 9px;
+	position: absolute;
+	top: -3px;
+	right: -28px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.annotation.expanded a.edit {
+	color: Pink;
+	font-size: 9px;
+	position: absolute;
+	top: -3px;
+	right: 12px;
+	z-index: 1;
+	cursor: pointer;
+	
+}
+.annotation a:hover, .annotation a.delete:hover, .annotation a.edit:hover {
+	color: white;
+}
+.annotation.client a:hover {
+	color: white;
+}
+
+.clip {
+	height: 150px;
+	width: 200px;
+	border: 1px solid black;
+	overflow: hidden;
+	cursor: pointer;
+	position:relative
+}
+
+.clip img {
+	position: relative;
+}
+
+
+/*
+ * Test Annotations
+ */
+#a1 {
+	top: 475px;
+	left: 600px;
+}
+#a2 {
+	top: 575px;
+	left: 797px;
+}
+#a3 {
+	top: 722px;
+	left: 455px;
+}
+#a4 {
+	top: 700px;
+	left: 659px;
+}
+#a5 {
+	top: 735px;
+	left: 600px;
+}
+#a6 {
+	top: 526px;
+	left: 150px;
+}
+
+
+.bgrepeat, .pagefloat { cursor: pointer; }
+.bgrepeat img, .pagefloat img { border: 2px solid white; }
+
+/*
+ * Footer
+ */
+#footer {
+	background: url(../images/footer.png) no-repeat center top;
+	height: 100px;
+	width: 818px;
+	margin: 0 auto;
+}
+#pressenter { float: left; }
+
+
+
+/* dev bar */
+#deleteme9064 { display: none; }

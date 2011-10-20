@@ -1,0 +1,2 @@
+AnnotationId#CompId#UserId#AnnotationX#AnnotationY#AnnotationText
+-1#-1#-1#-1#-1#-1

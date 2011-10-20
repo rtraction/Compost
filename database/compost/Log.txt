@@ -1,0 +1,1 @@
+LogId#LogEvent#LogType#LogTimestamp#LogIP

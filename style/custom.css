@@ -1,0 +1,11 @@
+#header h1 { font-family: Georgia,serif; }
+#header h1 { color: #ffffff; }
+h2 { font-family: Arial,Helvetica,sans-serif; }
+h2 { color: #000000; }
+#wrap { background-image: url(../images/main_bg.png); }
+body { background-color: #747474; }
+body { background-image: url(../images/page_bg.png); }
+body { color: #3D3D3D; }
+#menu { background-color: #8bc642; }
+#menu li a { color: #FFFFFF; }
+#menu li.current a, #menu li a:hover { color: #000000; }

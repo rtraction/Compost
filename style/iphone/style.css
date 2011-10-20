@@ -1,0 +1,15 @@
+body.fullscreen #home .info { display: none; }
+#about {
+	padding: 100px 10px 40px;
+	font-size: 13px;
+	text-align: center;
+	background: #fff;
+}
+#about p {
+	margin-bottom: 8px;
+}
+#about a {
+	color: #2C8FCE;
+	font-weight: bold;
+	text-decoration: none;
+}

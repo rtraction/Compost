@@ -1,0 +1,14 @@
+SettingId#SettingName#SettingValue#DefaultValue#DataType
+1#Site Title##Design Feedback#string
+2#Title Font#Georgia,serif#Georgia,serif#font
+3#Title Colour#FFFFFF#FFFFFF#color
+4#Heading Font#Arial,Helvetica,sans-serif#Arial,Helvetica,sans-serif#font
+5#Heading Colour#000000#000000#color
+6#Body Background Image#main_bg.png#main_bg.png#file
+7#Header Background Colour#747474#747474#color
+8#Header Background Image#page_bg.png#page_bg.png#file
+9#Body Font#Arial,Helvetica,sans-serif#Arial,Helvetica,sans-serif#font
+10#Body Colour#3D3D3D#3D3D3D#color
+12#Menu Background Colour#8bc642#8bc642#color
+13#Menu Text Colour#FFFFFF#FFFFFF#color
+14#Menu Active Text Colour#0AAFF4#0AAFF4#color
